@@ -213,5 +213,120 @@ header{
     }
 }
 .featured-jobs{
-    height: 500px;
+    .featured-jobs-text{
+        width: 540px;
+        margin: 0 auto;
+        padding-top: 45px;
+        .featured-title{
+            font-family: Oswald;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        .featured-subtitle{
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: center;
+
+        }
+
+    }
+    .featured-jobs-slider{
+        display: flex;
+        flex-direction: row;
+        
+        .slider-text{
+            padding-top: 30px;
+        }
+        .slider-card{
+            padding: 50px 75px 50px 75px;
+            
+            box-shadow: 15px 5px 5px grey;
+            width: 380px;
+            text-align: center;
+        }
+        .slider-buttons{
+            width: 230px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .apply-now{
+                align-content: center;
+            }
+        }
+    }
+}
+.review{
+
+    padding-top: 45px;
+    .review-review{
+        width: 540px;
+        margin: 0 auto;
+        .review-title{
+            font-family: Oswald;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            
+        }
+        .review-subtitle{
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            
+        }
+    }
+    
+    .review-block{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding-top: 30px;
+        .review-text{
+            width: 730px;
+        }
+    }
+}
+.numbers{
+    padding-top: 40px;
+    .container{
+        background: #CED5F4;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        p{
+            font-family: Oswald;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #584EC6;
+            span{
+                font-family: Open Sans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: #fff;
+
+            }
+
+        }
+    }
 }
