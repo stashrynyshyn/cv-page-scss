@@ -1,0 +1,217 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.banner{
+    background: #F5F7FF;
+}
+header{
+    
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    .navigation_menu{
+        align-content: center;
+        ul{
+            width: 433px;
+            height: 20px;
+            display: flex;
+            gap: 10px;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            
+
+            li{
+                list-style-type: none;
+
+                a{
+                    text-decoration: none;
+                    color: #272323;
+                }
+            }
+        }
+    }
+    .search_input {
+        align-content: center;
+        input{
+            width: 307px;
+            
+        }
+    }
+    .registration{
+        align-content: center;
+        a{
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 62px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            text-decoration: none;
+            color: #272323;
+        }
+    }
+}
+
+.banner-info{
+    background: #F5F7FF;
+    padding-top: 25px;
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        width: 543px;
+        margin-top: 70px;
+        .banner-title{
+            font-family: Prompt;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 55px;
+            letter-spacing: 0.07em;
+            text-align: left;
+            
+            span{
+                color: #EF6010;
+            }
+
+        }
+        .banner-subtitle{
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            
+
+        }
+        .banner-buttons{
+            width: 337px;
+            height: 44px;
+            top: 477px;
+            left: 165px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+    }
+}
+.products-logo{
+    
+    .products-container{
+        display: flex;
+        flex-direction: row;
+        width: 1110px;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+}
+.guide{
+    padding-top: 25px;
+    .guide-upper{
+        color: #FF5C00;
+    }
+    .guide-block{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        .guide-title{
+            width: 393px;
+            p{
+                font-family: Oswald;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 50px;
+                letter-spacing: 0.05em;
+                text-align: left;
+            
+
+            }
+        }
+     .guide-info{
+            .accordion{
+             width: 435px;
+         }
+     }
+    }
+}
+
+.why-choose-us{
+    padding-top: 110px;
+    .why-us-title{
+        width: 543px;
+        margin: 0 auto;
+        .why-us-main-title{
+            font-family: Oswald;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            text-align: center;
+
+        }
+        .why-us-subtitle{
+            
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: center;
+
+        }
+    }
+    .why-us-cards{
+        display: flex;
+        flex-direction: row;
+        .why-us-card{
+            width: 350px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            
+            box-shadow: 15px 5px 5px grey;
+            .card-subtitle{
+                padding: 0px 37px 37px 37px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                text-align: left;
+
+            }
+            .card-img{
+                padding: 40px 37px 15px 37px;
+            }
+            .card-title{
+                padding: 0px 37px 10px 37px;
+                font-family: Open Sans;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                text-align: left;
+
+            }
+        }
+    }
+}
+.featured-jobs{
+    height: 500px;
+}

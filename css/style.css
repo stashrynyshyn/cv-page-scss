@@ -1,0 +1,240 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.banner {
+  background: #F5F7FF;
+}
+
+header {
+  width: 1110px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header .navigation_menu {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+header .navigation_menu ul {
+  width: 433px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+header .navigation_menu ul li {
+  list-style-type: none;
+}
+header .navigation_menu ul li a {
+  text-decoration: none;
+  color: #272323;
+}
+header .search_input {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+header .search_input input {
+  width: 307px;
+}
+header .registration {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+header .registration a {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: #272323;
+}
+
+.banner-info {
+  background: #F5F7FF;
+  padding-top: 25px;
+}
+.banner-info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.banner-info .banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 543px;
+  margin-top: 70px;
+}
+.banner-info .banner-text .banner-title {
+  font-family: Prompt;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0.07em;
+  text-align: left;
+}
+.banner-info .banner-text .banner-title span {
+  color: #EF6010;
+}
+.banner-info .banner-text .banner-subtitle {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.banner-info .banner-text .banner-buttons {
+  width: 337px;
+  height: 44px;
+  top: 477px;
+  left: 165px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.products-logo .products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1110px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+}
+
+.guide {
+  padding-top: 25px;
+}
+.guide .guide-upper {
+  color: #FF5C00;
+}
+.guide .guide-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+.guide .guide-block .guide-title {
+  width: 393px;
+}
+.guide .guide-block .guide-title p {
+  font-family: Oswald;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.guide .guide-block .guide-info .accordion {
+  width: 435px;
+}
+
+.why-choose-us {
+  padding-top: 110px;
+}
+.why-choose-us .why-us-title {
+  width: 543px;
+  margin: 0 auto;
+}
+.why-choose-us .why-us-title .why-us-main-title {
+  font-family: Oswald;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.why-choose-us .why-us-title .why-us-subtitle {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.why-choose-us .why-us-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.why-choose-us .why-us-cards .why-us-card {
+  width: 350px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 15px 5px 5px grey;
+          box-shadow: 15px 5px 5px grey;
+}
+.why-choose-us .why-us-cards .why-us-card .card-subtitle {
+  padding: 0px 37px 37px 37px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.why-choose-us .why-us-cards .why-us-card .card-img {
+  padding: 40px 37px 15px 37px;
+}
+.why-choose-us .why-us-cards .why-us-card .card-title {
+  padding: 0px 37px 10px 37px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.featured-jobs {
+  height: 500px;
+}
