@@ -84,6 +84,10 @@ header .registration a {
   text-decoration: none;
   color: #272323;
 }
+header .search_input input {
+  border-radius: 10px;
+  border: 0px;
+}
 
 .banner-info {
   background: #F5F7FF;
