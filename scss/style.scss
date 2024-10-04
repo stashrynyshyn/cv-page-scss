@@ -1,8 +1,24 @@
+%font-title{
+    font-family: "Oswald" sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+%font-subtitle{
+    font-family: "Open Sans" sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
 body{
     padding: 0px;
     margin: 0px;
-    
 }
+
 .container{
     width: 1110px;
     margin: 0 auto;
@@ -10,6 +26,7 @@ body{
 .banner{
     background: #F5F7FF;
 }
+
 header{
     
     width: 1110px;
@@ -24,14 +41,7 @@ header{
             height: 20px;
             display: flex;
             gap: 10px;
-            font-family: Open Sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            text-align: center;
-            
-
+            @extend %font-subtitle;
             li{
                 list-style-type: none;
 
@@ -90,22 +100,15 @@ header{
 
         }
         .banner-subtitle{
-            font-family: Open Sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.02em;
+            @extend %font-subtitle;
             text-align: left;
-            
-
         }
         .banner-buttons{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            gap: 30px;
             width: 337px;
-            height: 44px;
-            top: 477px;
-            left: 165px;
-            gap: 0px;
-            opacity: 0px;
             .discover-now{
                 background-color: #5E4BB6; /* Фіолетовий колір кнопки */
                 border: none;
@@ -120,9 +123,27 @@ header{
                 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тінь */
                 transition: all 0.3s ease;
             }
+            .discover-button{
+                align-content: center;
+            }
+            .demo-button{
+                gap: 15px;
+                a{
+                    padding-left: 6px;
+                    text-decoration: none;
+                    color: black;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 62px;
+                    letter-spacing: 0.02em;
+                    text-align: center;
+                }
+            }
         }
     }
 }
+
 .products-logo{
     
     .products-container{
@@ -170,23 +191,10 @@ header{
         width: 543px;
         margin: 0 auto;
         .why-us-main-title{
-            font-family: Oswald;
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 50px;
-            letter-spacing: 0.05em;
-            text-align: center;
-
+            @extend %font-title;
         }
         .why-us-subtitle{
-            
-            font-family: Open Sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            text-align: center;
-
+            @extend %font-subtitle;
         }
     }
     .why-us-cards{
@@ -201,11 +209,7 @@ header{
             box-shadow: 15px 5px 5px grey;
             .card-subtitle{
                 padding: 0px 37px 37px 37px;
-                font-family: Open Sans;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 22px;
-                letter-spacing: 0.02em;
+                @extend %font-subtitle;
                 text-align: left;
 
             }
@@ -231,21 +235,10 @@ header{
         margin: 0 auto;
         padding-top: 45px;
         .featured-title{
-            font-family: Oswald;
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 50px;
-            letter-spacing: 0.05em;
-            text-align: center;
+            @extend %font-title;
         }
         .featured-subtitle{
-            font-family: Open Sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            text-align: center;
-
+            @extend %font-subtitle;
         }
 
     }
@@ -281,22 +274,11 @@ header{
         width: 540px;
         margin: 0 auto;
         .review-title{
-            font-family: Oswald;
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 50px;
-            letter-spacing: 0.05em;
-            text-align: center;
+            @extend %font-title;
             
         }
         .review-subtitle{
-            font-family: Open Sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            text-align: center;
-            
+            @extend %font-subtitle;
         }
     }
     
@@ -330,14 +312,8 @@ header{
             text-align: center;
             color: #584EC6;
             span{
-                font-family: Open Sans;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: 0.02em;
-                text-align: center;
+                @extend %font-subtitle;
                 color: #fff;
-
             }
 
         }
@@ -349,22 +325,10 @@ header{
         width: 540px;
         margin: 0 auto;
         .plan-title{
-            font-family: Oswald;
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 50px;
-            letter-spacing: 0.05em;
-            text-align: center;
-
+            @extend %font-title;
         }
         .plan-subtitle{
-            font-family: Open Sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            text-align: center;
-
+            @extend %font-subtitle;
         }
     }
     .plan-cards{
@@ -383,13 +347,7 @@ header{
         .plan-price{
             p{
                 color: black;
-                font-family: Oswald;
-                font-size: 45px;
-                font-weight: 400;
-                line-height: 55px;
-                letter-spacing: 0.07em;
-                
-
+                @extend %font-title;
             }
             span{
                 color: #8A86B9;
@@ -397,12 +355,7 @@ header{
             
         }
         .plan-list{
-            font-family: Open Sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            text-align: center;
+            @extend %font-subtitle;
             li{
                 list-style-type: none;
             }
@@ -417,12 +370,7 @@ header{
 
             a{
                 text-decoration: none;
-                font-family: Open Sans;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 62px;
-                letter-spacing: 0.02em;
-                text-align: center;
+                @extend %font-subtitle;
                 color: white;
 
             }

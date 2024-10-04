@@ -1,0 +1,109 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .container{
+        max-width: 430px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .banner-info{
+        .container{
+            display: flex;
+            flex-direction: column;
+            .banner-image{
+                img{
+                    height: auto;
+                    width: 350px;
+                }
+            }
+        }
+        .banner-text{
+            width: auto;
+        }
+
+    }
+    .products-logo{
+        .products-container{
+            flex-direction: column;
+            width: auto;
+        }
+    }
+    .guide{
+        .guide-block{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 350px;
+                height: auto;
+            }
+            .guide-info{
+                .accordion{
+                    width: auto;
+                }
+            }
+        }
+    }   
+    .why-choose-us{
+        .why-us-title{
+            width: auto;
+        }
+        .why-us-cards{
+            flex-direction: column;
+        }
+    }
+    .featured-jobs{
+        .featured-jobs-text{
+            width: auto;
+        }
+        .featured-jobs-slider{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .review{
+        .review-review{
+            width: auto;
+        }
+        .review-block{
+            flex-direction: column;
+            .review-text{
+                width: auto;
+            }
+        }
+    }
+    .numbers{
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .plan{
+        .plan-main-text{
+            width: auto;
+        }
+        .plan-cards{
+            flex-direction: column;
+        }
+    }
+    footer{
+        .container{
+            flex-wrap: wrap;
+        }
+        .container-footer{
+            width: auto;
+            flex-wrap: wrap;
+            hr{
+                display: none;
+            }
+            .footer-info{
+                flex-direction: column;
+                .footer-nav{
+                    ul{
+                        flex-wrap: wrap;
+                    }
+                    }
+                }
+            }
+        }
+    }

@@ -1,4 +1,22 @@
 @charset "UTF-8";
+.plan .plan-cards .plan-price p, .plan .plan-main-text .plan-title, .review .review-review .review-title, .featured-jobs .featured-jobs-text .featured-title, .why-choose-us .why-us-title .why-us-main-title {
+  font-family: "Oswald" sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.plan .plan-cards .plan-button a, .plan .plan-cards .plan-list, .plan .plan-main-text .plan-subtitle, .numbers .container p span, .review .review-review .review-subtitle, .featured-jobs .featured-jobs-text .featured-subtitle, .why-choose-us .why-us-cards .why-us-card .card-subtitle, .why-choose-us .why-us-title .why-us-subtitle, .banner-info .banner-text .banner-subtitle, header .navigation_menu ul {
+  font-family: "Open Sans" sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -34,12 +52,6 @@ header .navigation_menu ul {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 header .navigation_menu ul li {
   list-style-type: none;
@@ -106,20 +118,19 @@ header .registration a {
   color: #EF6010;
 }
 .banner-info .banner-text .banner-subtitle {
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
   text-align: left;
 }
 .banner-info .banner-text .banner-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+  gap: 30px;
   width: 337px;
-  height: 44px;
-  top: 477px;
-  left: 165px;
-  gap: 0px;
-  opacity: 0px;
 }
 .banner-info .banner-text .banner-buttons .discover-now {
   background-color: #5E4BB6; /* Фіолетовий колір кнопки */
@@ -136,6 +147,24 @@ header .registration a {
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тінь */
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.banner-info .banner-text .banner-buttons .discover-button {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.banner-info .banner-text .banner-buttons .demo-button {
+  gap: 15px;
+}
+.banner-info .banner-text .banner-buttons .demo-button a {
+  padding-left: 6px;
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .products-logo .products-container {
@@ -192,22 +221,6 @@ header .registration a {
   width: 543px;
   margin: 0 auto;
 }
-.why-choose-us .why-us-title .why-us-main-title {
-  font-family: Oswald;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-.why-choose-us .why-us-title .why-us-subtitle {
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
 .why-choose-us .why-us-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,11 +245,6 @@ header .registration a {
 }
 .why-choose-us .why-us-cards .why-us-card .card-subtitle {
   padding: 0px 37px 37px 37px;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.02em;
   text-align: left;
 }
 .why-choose-us .why-us-cards .why-us-card .card-img {
@@ -256,22 +264,6 @@ header .registration a {
   width: 540px;
   margin: 0 auto;
   padding-top: 45px;
-}
-.featured-jobs .featured-jobs-text .featured-title {
-  font-family: Oswald;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-.featured-jobs .featured-jobs-text .featured-subtitle {
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 .featured-jobs .featured-jobs-slider {
   display: -webkit-box;
@@ -315,22 +307,6 @@ header .registration a {
 .review .review-review {
   width: 540px;
   margin: 0 auto;
-}
-.review .review-review .review-title {
-  font-family: Oswald;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-.review .review-review .review-subtitle {
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 .review .review-block {
   display: -webkit-box;
@@ -377,12 +353,6 @@ header .registration a {
   color: #584EC6;
 }
 .numbers .container p span {
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
   color: #fff;
 }
 
@@ -392,22 +362,6 @@ header .registration a {
 .plan .plan-main-text {
   width: 540px;
   margin: 0 auto;
-}
-.plan .plan-main-text .plan-title {
-  font-family: Oswald;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-.plan .plan-main-text .plan-subtitle {
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 .plan .plan-cards {
   display: -webkit-box;
@@ -430,22 +384,9 @@ header .registration a {
 }
 .plan .plan-cards .plan-price p {
   color: black;
-  font-family: Oswald;
-  font-size: 45px;
-  font-weight: 400;
-  line-height: 55px;
-  letter-spacing: 0.07em;
 }
 .plan .plan-cards .plan-price span {
   color: #8A86B9;
-}
-.plan .plan-cards .plan-list {
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 .plan .plan-cards .plan-list li {
   list-style-type: none;
@@ -459,12 +400,6 @@ header .registration a {
 }
 .plan .plan-cards .plan-button a {
   text-decoration: none;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 62px;
-  letter-spacing: 0.02em;
-  text-align: center;
   color: white;
 }
 
