@@ -60,6 +60,9 @@ header .navigation_menu ul li a {
   text-decoration: none;
   color: #272323;
 }
+header .navigation_menu ul li a:hover {
+  color: #8A86B9;
+}
 header .search_input {
   -ms-flex-line-pack: center;
       align-content: center;
@@ -229,10 +232,12 @@ header .registration a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 30px;
 }
 .why-choose-us .why-us-cards .why-us-card {
+  margin-top: 30px;
   width: 350px;
-  border-radius: 20px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,8 +245,8 @@ header .registration a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 15px 5px 5px grey;
-          box-shadow: 15px 5px 5px grey;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 .why-choose-us .why-us-cards .why-us-card .card-subtitle {
   padding: 0px 37px 37px 37px;
@@ -259,6 +264,11 @@ header .registration a {
   letter-spacing: 0.02em;
   text-align: left;
 }
+.why-choose-us .why-us-cards .why-us-card:hover {
+  -webkit-box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
 
 .featured-jobs .featured-jobs-text {
   width: 540px;
@@ -273,16 +283,33 @@ header .registration a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 20px;
+  margin-bottom: 60px;
 }
 .featured-jobs .featured-jobs-slider .slider-text {
   padding-top: 30px;
 }
 .featured-jobs .featured-jobs-slider .slider-card {
+  margin-top: 30px;
   padding: 50px 75px 50px 75px;
-  -webkit-box-shadow: 15px 5px 5px grey;
-          box-shadow: 15px 5px 5px grey;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 380px;
   text-align: center;
+}
+.featured-jobs .featured-jobs-slider .slider-card .slider-text {
+  font-size: 20px;
+}
+.featured-jobs .featured-jobs-slider .slider-card .slider-description .plan .plan-cards .plan-button a span, .plan .plan-cards .plan-button .featured-jobs .featured-jobs-slider .slider-card .slider-description a span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .plan .plan-cards .plan-list span, .plan .plan-cards .featured-jobs .featured-jobs-slider .slider-card .slider-description .plan-list span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .plan .plan-main-text .plan-subtitle span, .plan .plan-main-text .featured-jobs .featured-jobs-slider .slider-card .slider-description .plan-subtitle span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .numbers .container p span span, .numbers .container p .featured-jobs .featured-jobs-slider .slider-card .slider-description span span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .review .review-review .review-subtitle span, .review .review-review .featured-jobs .featured-jobs-slider .slider-card .slider-description .review-subtitle span, .featured-jobs .featured-jobs-slider .slider-card .slider-description header .navigation_menu ul span, header .navigation_menu .featured-jobs .featured-jobs-slider .slider-card .slider-description ul span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .banner-info .banner-text .banner-subtitle span, .banner-info .banner-text .featured-jobs .featured-jobs-slider .slider-card .slider-description .banner-subtitle span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .why-choose-us .why-us-title .why-us-subtitle span, .why-choose-us .why-us-title .featured-jobs .featured-jobs-slider .slider-card .slider-description .why-us-subtitle span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .why-choose-us .why-us-cards .why-us-card .card-subtitle span, .why-choose-us .why-us-cards .why-us-card .featured-jobs .featured-jobs-slider .slider-card .slider-description .card-subtitle span, .featured-jobs .featured-jobs-slider .slider-card .slider-description .featured-jobs-text .featured-subtitle span, .featured-jobs .featured-jobs-text .featured-jobs-slider .slider-card .slider-description .featured-subtitle span {
+  color: #868686;
+}
+.featured-jobs .featured-jobs-slider .slider-card:hover {
+  -webkit-box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.featured-jobs .featured-jobs-slider .slider-card:hover .apply-now {
+  background: #584EC6;
 }
 .featured-jobs .featured-jobs-slider .slider-buttons {
   width: 230px;
@@ -297,8 +324,49 @@ header .registration a {
       justify-content: space-around;
 }
 .featured-jobs .featured-jobs-slider .slider-buttons .apply-now {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 172px;
+  border-radius: 30px;
+  opacity: 0px;
+  background: #BDBBD9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 43px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.featured-jobs .featured-jobs-slider .slider-buttons .apply-now a {
+  text-decoration: none;
+  color: white;
+}
+
+.view-more {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 172px;
+  border-radius: 30px;
+  opacity: 0px;
+  background: #4238AF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 43px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.view-more a {
+  text-decoration: none;
+  color: white;
 }
 
 .review {
@@ -321,6 +389,27 @@ header .registration a {
 }
 .review .review-block .review-text {
   width: 730px;
+}
+.review .review-block .review-text .review-main-text {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.review .review-block .review-text .review-main-text span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #868686;
+}
+.review .review-block .review-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .numbers {
@@ -355,6 +444,11 @@ header .registration a {
 .numbers .container p span {
   color: #fff;
 }
+.numbers .container > div > p:hover {
+  font-size: 50px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 
 .plan {
   margin-top: 80px;
@@ -364,6 +458,7 @@ header .registration a {
   margin: 0 auto;
 }
 .plan .plan-cards {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,15 +467,30 @@ header .registration a {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .plan .plan-cards .plan-card {
-  width: 350px;
-  background: gray;
+  background-color: #ffffff;
   text-align: center;
-  padding: 60px 65px 60px 65px;
+  padding: 60px 45px 60px 45px;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 .plan .plan-cards .plan-card p {
   color: #4238AF;
+}
+.plan .plan-cards .plan-card:hover {
+  -webkit-box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background: #F9FAFF;
+}
+.plan .plan-cards .plan-card:hover .plan-button {
+  background: #584EC6;
 }
 .plan .plan-cards .plan-price p {
   color: black;
@@ -390,17 +500,30 @@ header .registration a {
 }
 .plan .plan-cards .plan-list li {
   list-style-type: none;
+  gap: 5px;
+  text-align: left;
 }
 .plan .plan-cards .plan-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 172px;
-  height: 43px;
   border-radius: 30px;
   opacity: 0px;
   background: #BDBBD9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 43px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .plan .plan-cards .plan-button a {
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 
 footer {
@@ -429,6 +552,10 @@ footer .container li {
   line-height: 26px;
   letter-spacing: 0.02em;
   text-align: left;
+}
+footer .container li:hover {
+  color: white;
+  cursor: pointer;
 }
 footer .container ul {
   padding: 0;

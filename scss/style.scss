@@ -49,6 +49,9 @@ header{
                     text-decoration: none;
                     color: #272323;
                 }
+                a:hover{
+                    color: #8A86B9;
+                }
             }
         }
     }
@@ -200,13 +203,16 @@ header{
     .why-us-cards{
         display: flex;
         flex-direction: row;
+        gap: 30px;
         .why-us-card{
+            margin-top: 30px;
             width: 350px;
-            border-radius: 20px;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             
-            box-shadow: 15px 5px 5px grey;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
             .card-subtitle{
                 padding: 0px 37px 37px 37px;
                 @extend %font-subtitle;
@@ -227,6 +233,10 @@ header{
 
             }
         }
+        .why-us-card:hover{
+            box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
     }
 }
 .featured-jobs{
@@ -245,16 +255,36 @@ header{
     .featured-jobs-slider{
         display: flex;
         flex-direction: row;
+        gap: 20px;
+        margin-bottom: 60px;
         
         .slider-text{
             padding-top: 30px;
         }
         .slider-card{
+            margin-top: 30px;
             padding: 50px 75px 50px 75px;
             
-            box-shadow: 15px 5px 5px grey;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             width: 380px;
             text-align: center;
+            .slider-text{
+                font-size: 20px;
+            }
+            .slider-description{
+                %font-subtitle
+                span{
+                    color: #868686;
+                }
+               
+           }
+        }
+        .slider-card:hover{
+            box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            .apply-now{
+                background: #584EC6;
+            }
         }
         .slider-buttons{
             width: 230px;
@@ -262,11 +292,41 @@ header{
             flex-direction: row;
             justify-content: space-around;
             .apply-now{
-                align-content: center;
+                margin-top: 60px;
+                display: flex;
+                width: 172px;
+                border-radius: 30px;
+                opacity: 0px;
+                background: #BDBBD9;                ;
+                justify-content: center;
+                margin: 0 auto;
+                height: 43px;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
             }
         }
     }
-}
+    .view-more{
+        margin-top: 60px;
+        display: flex;
+        width: 172px;
+        border-radius: 30px;
+        opacity: 0px;
+        background: #4238AF;
+        justify-content: center;
+        margin: 0 auto;
+        height: 43px;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
 .review{
 
     padding-top: 45px;
@@ -289,6 +349,24 @@ header{
         padding-top: 30px;
         .review-text{
             width: 730px;
+            .review-main-text{
+                font-family: Open Sans;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                span{
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #868686;
+                }
+            }
+
+        }
+        .review-nav{
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
@@ -317,6 +395,11 @@ header{
             }
 
         }
+
+    }
+    .container>div>p:hover{
+        font-size: 50px;
+        transition: all 0.5s ease-out;
     }
 }
 .plan{
@@ -332,16 +415,27 @@ header{
         }
     }
     .plan-cards{
+        margin-top: 30px;
         display: flex;
         flex-direction: row;
         gap: 25px;
+        justify-content: space-between;
         .plan-card{
-            width: 350px;
-            background: gray;
+            background-color: #ffffff;
             text-align: center;
-            padding: 60px 65px 60px 65px;
+            padding: 60px 45px 60px 45px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             p{
                 color: #4238AF;
+            }
+        }
+        .plan-card:hover{
+            box-shadow: 0 44px 20px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 10px;
+            transition: all 0.5s ease-out;
+            background: #F9FAFF;
+            .plan-button{
+                background: #584EC6;
             }
         }
         .plan-price{
@@ -358,21 +452,27 @@ header{
             @extend %font-subtitle;
             li{
                 list-style-type: none;
+                gap: 5px;
+                text-align: left;
             }
 
         }
         .plan-button{
+            display: flex;
             width: 172px;
-            height: 43px;
             border-radius: 30px;
             opacity: 0px;
             background: #BDBBD9;
-
+            justify-content: center;
+            margin: 0 auto;
+            height: 43px;
+            align-items: center;
             a{
                 text-decoration: none;
                 @extend %font-subtitle;
                 color: white;
-
+                text-align: center;
+               
             }
         }
 
@@ -397,6 +497,10 @@ footer{
             letter-spacing: 0.02em;
             text-align: left;
 
+        }
+        li:hover{
+            color: white;
+            cursor: pointer;
         }
         ul{
             padding: 0;

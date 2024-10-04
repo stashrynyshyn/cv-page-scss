@@ -6,6 +6,28 @@
         display: flex;
         flex-direction: column;
         width: auto;
+        .navigation_menu{
+            padding-top: 15px;
+            a{
+                font-size: 16px;
+            }
+        }
+        .registration{
+            text-align: center;
+            a{
+                font-size: 20px;
+            }
+            a:hover{
+                color: #EF6010;
+            }
+        }
+        .search_input{
+            margin: auto;
+            input{
+                border-radius: 10px;
+                border: 0px;
+            }
+        }
     }
     .banner-info{
         .container{
@@ -17,6 +39,18 @@
                     width: 350px;
                 }
             }
+            .banner-text{
+                width: 85%;
+                margin: 0 auto;
+                .banner-title{
+                    h1{
+                        font-size: 43px;
+                        text-align: center;
+                    }
+                    
+                }
+            }
+            
         }
         .banner-text{
             width: auto;
@@ -25,18 +59,27 @@
     }
     .products-logo{
         .products-container{
-            flex-direction: column;
-            width: auto;
+            width: 90%;
+            flex-flow: wrap;
         }
     }
     .guide{
         .guide-block{
             display: flex;
             flex-direction: column;
-            img{
-                width: 350px;
-                height: auto;
+            .guide-image{
+                margin: 0 auto;
+                img{
+                    width: 380px;
+                    height: auto;
+                }
             }
+            .guide-info{
+                .guide-title{
+                    text-align: center;
+                }
+            }
+
             .guide-info{
                 .accordion{
                     width: auto;
@@ -46,10 +89,12 @@
     }   
     .why-choose-us{
         .why-us-title{
+            
             width: auto;
         }
         .why-us-cards{
             flex-direction: column;
+            align-items: center;
         }
     }
     .featured-jobs{
@@ -59,6 +104,7 @@
         .featured-jobs-slider{
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
     }
     .review{
@@ -69,6 +115,18 @@
             flex-direction: column;
             .review-text{
                 width: auto;
+                .review-main-text{
+                    font-size: 28px;
+                    text-align: center;
+                    font-weight: 500;
+                }
+                .review-submain-text{
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+            .review-nav{
+                padding-top: 25px;
             }
         }
     }
@@ -89,6 +147,8 @@
     footer{
         .container{
             flex-wrap: wrap;
+            width: 90%;
+            gap: 20px;
         }
         .container-footer{
             width: auto;
@@ -97,10 +157,14 @@
                 display: none;
             }
             .footer-info{
-                flex-direction: column;
+                display: flex;
+                flex-direction: row;
+                align-items: end;
                 .footer-nav{
                     ul{
-                        flex-wrap: wrap;
+                       width: 150px;
+                       display: none;
+                       
                     }
                     }
                 }
