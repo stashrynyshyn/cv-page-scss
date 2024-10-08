@@ -14,6 +14,14 @@
     letter-spacing: 0.02em;
     text-align: center;
 }
+
+@mixin a ($num,$col,$weight,$style){
+    font-size: $num;
+    color: $col;
+    text-decoration: none;
+    font-weight: $weight;
+    font-style: $style;
+}
 body{
     padding: 0px;
     margin: 0px;
@@ -74,6 +82,7 @@ header{
             text-decoration: none;
             color: #272323;
         }
+        
     }
     .search_input{
         input{
